@@ -5,7 +5,7 @@ FROM php:7.4-cli
 WORKDIR /var/www/html
 
 # Copy the PHP script into the container at /var/www/html
-COPY index.php /var/www/html/
+COPY index.php /var/www/html/index.php
 
 # Run the PHP script when the container launches
 CMD ["php", "index.php"]
